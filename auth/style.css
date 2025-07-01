@@ -1,0 +1,267 @@
+:root {
+    --main-color: #354046;       /* الأسود المعدل */
+    --secondary-color: #0188DF;  /* الأزرق المعدل */
+    --accent-color: #e74c3c;
+}
+
+body {
+    background-image: url('https://thaipalliativenurse.com/MiddleFiles/DefaultMediaIMG/health-professional-team.png');
+    background-position: left;
+    background-size: 30%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Tajawal', sans-serif;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.096);
+    z-index: -1;
+}
+
+.login-container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.login-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+}
+
+.login-header {
+    background: linear-gradient(135deg, var(--main-color), #1a252f);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.language-switcher {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.btn-language {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.btn-language:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.login-header h3 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.login-body {
+    padding: 30px;
+    background-color: white;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    flex-wrap: nowrap;
+}
+
+.input-group-text,
+.form-control,
+.btn-outline-secondary {
+    height: 45px;
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-radius: 0 10px 10px 0 !important;
+}
+
+.form-control {
+    padding: 12px 15px;
+    border-right: none;
+    border-left: 1px solid #ddd;
+    border-radius: 10px 0 0 10px !important;
+}
+
+.btn-outline-secondary {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #ddd;
+    background-color: white;
+    border-left: none;
+    border-radius: 10px 0 0 10px !important;
+    transition: all 0.3s;
+}
+
+.form-control:focus ~ .input-group-text,
+.form-control:focus ~ .btn-outline-secondary {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-login {
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(1, 136, 223, 0.2);
+}
+
+.btn-login:hover {
+    background-color: #0173ba;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(1, 136, 223, 0.3);
+}
+
+.btn-login:active {
+    transform: translateY(0);
+}
+
+.form-check-input:checked {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.form-check-label {
+    user-select: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.login-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.forgot-password {
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.forgot-password:hover {
+    color: #0173ba;
+    text-decoration: underline;
+}
+
+.login-footer a {
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+    color: #015b96 !important;
+}
+
+.user-type-selector .btn {
+    margin: 0 5px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.user-type-selector .btn.active {
+    border-color: var(--secondary-color);
+    background-color: rgba(1, 136, 223, 0.1);
+}
+
+.hidden-field {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        margin-top: 10%;
+        padding: 0 15px;
+    }
+    
+    .login-card {
+        margin: 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .login-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .btn-login {
+        padding: 10px;
+    }
+    
+    .language-switcher {
+        position: static;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    
+    .user-type-selector .d-flex {
+        flex-direction: column;
+    }
+    
+    .user-type-selector .btn {
+        margin: 5px 0;
+        width: 100%;
+    }
+}
+
+[dir="ltr"] .input-group-text {
+    border-right: none;
+    border-left: 1px solid #ddd;
+    border-radius: 10px 0 0 10px !important;
+}
+
+[dir="ltr"] .form-control {
+    border-left: none;
+    border-right: 1px solid #ddd;
+    border-radius: 0 10px 10px 0 !important;
+}
+
+[dir="ltr"] .btn-outline-secondary {
+    border-right: none;
+    border-left: 1px solid #ddd;
+    border-radius: 0 10px 10px 0 !important;
+}

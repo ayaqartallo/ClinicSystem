@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام إدارة العيادات - تسجيل الدخول</title>
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- خط Tajawal للغة العربية -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="language-switcher ">
+                            <button class="btn btn-language bg-secondary" id="switchLanguage">
+                                <i class="fas fa-language me-1"></i> English
+                            </button>
+                        </div>
+    <div class="container login-container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="card login-card">
+                    <div class="login-header">
+                      
+                        <h3><i class="fas fa-hospital me-2"></i> نظام إدارة العيادات</h3>
+                    </div>
+                    <div class="login-body">
+                        <div class="text-center mb-4">
+                            <img src="https://img.freepik.com/vecteurs-premium/symbole-pharmacie-innovant-pour-identite-entreprise_1150526-2534.jpg?semt=ais_items_boosted&w=740" alt="شعار العيادة" class="logo">
+                        </div>
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    <input type="text" class="form-control" id="username" placeholder="اسم المستخدم" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                    <input type="password" class="form-control" id="password" placeholder="كلمة المرور" required>
+                                    <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">تذكرني</label>
+                            </div>
+                            <button type="submit" class="btn btn-login mb-3">
+                                <i class="fas fa-sign-in-alt me-2"></i> تسجيل الدخول
+                            </button>
+                            <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                        </form>
+                    </div>
+                    <div class="login-footer">
+                        <p class="mb-0">ليس لديك حساب؟ <a href="#" style="color: var(--secondary-color);">انشاء حساب</a></p>
+                        <p class="mt-2 text-muted small"><a href="../index.html"> العودة للصفحة الرئيسية</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ملف JavaScript الخاص بالتطبيق -->
+    <script src="login.js"></script>
+</body>
+</html>
